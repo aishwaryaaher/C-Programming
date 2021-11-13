@@ -3,42 +3,60 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace _20_ForLoops
+namespace _26_Constructors
 {
     class Program
     {
         static void Main(string[] args)
         {
-           
-            //for (  int i=10; i >= 5; i--)
-            //{
-            //    Console.WriteLine(i);
-                
-            //}
-            //Console.ReadLine();
-                               // 0 1  2  3   4  5
-            int[] LuckyNumbers = {2,4,18,20,14,16};
-            for (int i = 0; i < LuckyNumbers.Length; i++) 
-            {
-                Console.WriteLine(LuckyNumbers[i]);
-            }
+            // i can make  some change  to make code small
+
+            Book book1 = new Book("Harry Potter","JK Rowling",5000);
+            Book book2 = new Book("Lord Of The Rings", "Tolkein", 3000);
+            Book book3= new Book();
+            // i can also update the value of books
+             book2.title="The Habbits";
+            Console.WriteLine(book2.title);
             Console.ReadLine();
+
+
+
+
+
+
+
+
+            //Book book1 = new Book();
+            ///*
+            //// using  parameters  
+            //Book book1 = new Book("Mike");
+            //*/
+
+            //book1.title = "Harry Potter";
+            //book1.author ="Jk Rowling";
+            //book1.pageNo = 4000;
+
+            //Book book2 = new Book(); 
+           
+            ///* // using  parameters
+            //     Book book2 = new Book("John");
+            //*/
+            
+            //book2.title = "Lord Of The Rings";
+            //book2.author = "Tolkein";
+            //book2.pageNo = 4000;
+
+            //Console.WriteLine(book1.title);
+            //Console.WriteLine(book1.author);
+            //Console.WriteLine(book1.pageNo);
+
+            //Console.WriteLine("");
+
+            //Console.WriteLine(book2.title);
+            //Console.WriteLine(book2.author);
+            //Console.WriteLine(book2.pageNo);
+
+          
         }
-        
     }
 }
-
-/*
-
-1. digital marketing 20hrs free-
-2.Graphic design
-3.microsoft excel register login enrol ( PROMOCODE =FZFACT)
- 4.data anylist
-5.Guide indexer job searching
-6.Resume Writing
-7.master in demand proffessional soft skills
-8..Effective skill
- * 9. Seeling a skill
- * 11.CS50
-
-*/
